@@ -1,9 +1,12 @@
 def prime?(num)
  array = (2..num).to_a
- array_2 = []
- if num <= 1
+ array.reject!{|i| num %i > 0}
+ if num <= 1 || array.length > 1 
    false 
- else array.select{|i| num %i == 0}
+ else
+   true 
+ end
+
    
- 
+   
 end
