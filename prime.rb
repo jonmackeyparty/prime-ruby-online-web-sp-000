@@ -1,7 +1,9 @@
 def prime?(num)
- new_array = (2..num).to_a
+ array = (2..num).to_a
+ array_2 = []
  if num <= 1
    false 
- else new_array.collect?{|i| num %i == 0}
- end
+ else array_2 << array.select{|i| num %i == 0}
+   
+ 
 end
