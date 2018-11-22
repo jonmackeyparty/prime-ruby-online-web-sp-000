@@ -3,7 +3,7 @@ def prime?(num)
  array_2 = []
  if num <= 1
    false 
- else array_2 << array.select{|i| num %i == 0}
+ else array.select{|i| num %i == 0}
    
  
 end
